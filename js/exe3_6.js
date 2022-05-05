@@ -1,7 +1,7 @@
 function calcularNotas() {
   var saque = document.getElementById("inSaque").value;
 
-  if (saque == 0 || saque % 2 != 0 || isNaN(saque)) {
+  if (saque === 0 || saque % 2 != 0 || isNaN(saque)) {
     document.getElementById("saida")
       .textContent = "Valores 2, 10, 20, 50, 100"
     return;
@@ -13,7 +13,7 @@ function calcularNotas() {
   var notasDez = Math.floor(saque / 10);
   var notasDois = Math.floor(saque / 2);
 
-  var menssagemOpcaoDeNotas = "Opções de notas para saque";
+  var menssagemOpcaoDeNotas = "Opções de notas";
   var menssagemNota100 = "Notas de R$: 100";
   var menssagemNota50 = "Notas de R$: 50";
   var menssagemNota20 = "Notas de R$: 20";
